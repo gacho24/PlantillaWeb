@@ -2,17 +2,66 @@ document.addEventListener('DOMContentLoaded', function () {
     /*Vídeo de empresa*/
     var primeraVez = true;
     var video = document.getElementById('videoEmpresa');
+    var playPauseBtn = document.getElementById('playPauseBtn');
+    var playPauseIcon = document.getElementById('playPauseIcon');
+    
     video.addEventListener('loadeddata', function () {
         video.currentTime = 9;
         video.pause();
     });
+
     video.addEventListener('play', function () {
         if (primeraVez) {
             primeraVez = false;
             video.currentTime = 0;
         }
+        updatePlayPauseIcon();
     });
 
+    video.addEventListener('pause', function () {
+        updatePlayPauseIcon();
+    });
+
+    playPauseBtn.addEventListener('click', function () {
+        togglePlayPause();
+    });
+
+    function togglePlayPause() {
+        if (video.paused || video.ended) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    function updatePlayPauseIcon() {
+        if (video.paused || video.ended) {
+            playPauseIcon.className = 'fas fa-play fa-3x';
+        } else {
+            playPauseIcon.className = 'fas fa-pause fa-3x';
+        }
+    }
+
+    var hoverTimeout;
+    video.addEventListener('mousemove', function () {
+        playPauseBtn.style.visibility = 'visible';
+        clearTimeout(hoverTimeout);
+        hoverTimeout = setTimeout(function () {
+            playPauseBtn.style.visibility = 'hidden';
+        }, 1000);
+    });
+
+    playPauseBtn.addEventListener('mouseenter', function () {
+        clearTimeout(hoverTimeout);
+    });
+
+    playPauseBtn.addEventListener('mouseleave', function () {
+        hoverTimeout = setTimeout(function () {
+            playPauseBtn.style.visibility = 'hidden';
+        }, 1000);
+    });
+
+    //Gestión de carousel
     var multipleImgCarousel = document.querySelector(
         "#imagenesCarousel"
     );
