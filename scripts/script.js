@@ -20,15 +20,15 @@ document.addEventListener('DOMContentLoaded', function () {
         var carousel = new bootstrap.Carousel(multipleImgCarousel, {
             interval: false,
         });
-        var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+        var carouselWidth = $(".carousel-inner").children().length * $(".carousel-item").width() + parseInt($(".carousel-item").css("padding-left")) + parseInt($(".carousel-item").css("padding-right"));
         var imagenWidth = $(".carousel-item").width() + parseInt($(".carousel-item").css("padding-left")) + parseInt($(".carousel-item").css("padding-right"));
         var scrollPosition = 0;
         $("#imagenesCarousel .carousel-control-next").on("click", function () {
-            if (scrollPosition < carouselWidth - imagenWidth * 4) {
+            if (scrollPosition < carouselWidth - imagenWidth * 3) {
                 scrollPosition += imagenWidth;
                 $("#imagenesCarousel .carousel-inner").animate({
-                        scrollLeft: scrollPosition
-                    },
+                    scrollLeft: scrollPosition
+                },
                     600
                 );
             }
@@ -37,8 +37,8 @@ document.addEventListener('DOMContentLoaded', function () {
             if (scrollPosition > 0) {
                 scrollPosition -= imagenWidth;
                 $("#imagenesCarousel .carousel-inner").animate({
-                        scrollLeft: scrollPosition
-                    },
+                    scrollLeft: scrollPosition
+                },
                     600
                 );
             }
