@@ -20,7 +20,7 @@
     <script src="scripts/script.js"></script>
 </head>
 
-<body>
+<body class="mx-auto">
     <!--Header-->
     <header>
         <!--Navbar-->
@@ -28,7 +28,7 @@
             <div class="container-fluid">
                 <!-- Logo a la izquierda -->
                 <a class="navbar-brand text-white position-absolute" href="#">
-                    <img id="logo" class="border rounded img-fluid" src="assets/images/logo.png" alt="Logo"
+                    <img id="logo" class="border-0 img-fluid" src="assets/images/logo.png" alt="Logo"
                         class="d-inline-block align-top">
                 </a>
                 <!-- Contenido a la derecha -->
@@ -37,23 +37,23 @@
                     <div class="d-flex flex-column">
                         <!-- Primera fila con iconos y select -->
                         <ul class="navbar-nav justify-content-md-end justify-content-left mb-5 mb-md-0">
-                            <li class="nav-item mx-1">
+                            <li class="nav-item mx-2">
                                 <a class="nav-link text-white" href="#">
                                     <i class="fab fa-twitter text-white"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1">
+                            <li class="nav-item mx-2">
                                 <a class="nav-link text-white" href="#">
                                     <i class="fab fa-facebook text-white"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1">
+                            <li class="nav-item mx-2">
                                 <a class="nav-link text-white" href="#">
                                     <i class="fab fa-instagram text-white"></i>
                                 </a>
                             </li>
-                            <li class="nav-item mx-1">
-                                <select class="form-select pe-4 bg-dark text-white" aria-label="Select de idiomas">
+                            <li class="nav-item mx-2 my-auto">
+                                <select class="form-select pe-4 bg-dark text-white border-0" aria-label="Select de idiomas">
                                     <option value="es">ES</option>
                                     <option value="en">EN</option>
                                 </select>
@@ -87,7 +87,7 @@
         <!--Video-->
         <article id="videoContainer"
             class="embed-responsive embed-responsive-16by9 d-flex justify-content-center bg-dark">
-            <video class="w-100" src="assets/videos/video.mp4" controls allowfullscreen></video>
+            <video id="videoEmpresa" class="w-100" src="assets/videos/video.mp4" controls allowfullscreen></video>
         </article>
         <!--Descripcion-->
         <article id="infoContainer" class="d-flex flex-column align-content-center w-50 mx-auto pt-4 pb-2" style="min-height: 30vh;">
@@ -99,11 +99,11 @@
             <div class="mb-auto"></div>
         </article>
         <!--Servicios-->
-        <section id="servicios" class="bg-dark pt-2 pb-4">
+        <section id="servicios" class="bg-dark pt-2">
             <h2 class="text-center py-4 text-white text-uppercase">Nuestros Servicios</h2>
-            <div class="row pb-2">
+            <div class="row h-65 w-100 mx-auto">
                 <!-- Card 1 -->
-                <div class="col-md-4 px-0">
+                <div class="col-md-4 px-0 hw-38">
                     <div class="card bg-dark h-100 position-relative">
                         <img src="assets/images/servicio1.jpg"
                             class="card-img-top h-100 w-100 object-fit-cover position-relative z-2"
@@ -112,14 +112,14 @@
                             class="card-body text-center border border-white rounded d-flex flex-column position-absolute top-50 start-50 translate-middle">
                             <p class="card-text text-uppercase text-white fs-5">Espectáculos y Eventos</p>
                         </div>
-                        <div class="position-absolute mx-4 ps-2 top-65">
+                        <div class="position-absolute mx-4 ps-2 mt-3 top-65">
                             <p class="text-uppercase text-white">Texto generico para este servicio que para nada es
                                 relleno</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="col-md-4 px-0">
+                <div class="col-md-4 px-0 hw-38">
                     <div class="card bg-dark h-100">
                         <img src="assets/images/servicio2.jpg"
                             class="card-img-top h-100 w-100 object-fit-cover position-relative z-2" alt="Formación">
@@ -127,14 +127,14 @@
                             class="card-body text-center border border-white rounded d-flex flex-column position-absolute top-50 start-50 translate-middle">
                             <p class="card-text text-uppercase text-white fs-5">Formación</p>
                         </div>
-                        <div class="position-absolute mx-4 ps-2 top-65">
+                        <div class="position-absolute mx-4 ps-2 mt-3 top-65">
                             <p class="text-uppercase text-white">Texto generico para este servicio que para nada es
                                 relleno</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
-                <div class="col-md-4 px-0">
+                <div class="col-md-4 px-0 hw-38">
                     <div class="card bg-dark h-100">
                         <img src="assets/images/servicio3.jpg"
                             class="card-img-top h-100 w-100 object-fit-cover position-relative z-2"
@@ -143,62 +143,55 @@
                             class="card-body text-center border border-white rounded d-flex flex-column position-absolute top-50 start-50 translate-middle">
                             <p class="card-text text-uppercase text-white fs-5">Asesoramiento Agrícola y Ganadero</p>
                         </div>
-                        <div class="position-absolute mx-4 ps-2 top-65">
+                        <div class="position-absolute mx-4 ps-2 mt-3 top-65">
                             <p class="text-uppercase text-white">Texto generico para este servicio que para nada es
                                 relleno</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row pb-3">
-                <div class="col text-center">
-                    <button id="btnVerMas" type="button" class="btn btn-dark mt-3 border-light">
-                        <h5 class="m-2"><i class="fas fa-eye me-2"></i>Ver más</h5>
-                    </button>
-                </div>
-            </div>
         </section>
         <!--Imagenes-->
         <section id="imagenes" class="py-4">
             <h2 class="text-center py-4 text-uppercase">Galería de imágenes</h2>
-            <div id="imagenesCarousel" class="carousel mx-4">
-                <div class="carousel-inner">
+            <div id="imagenesCarousel" class="carousel mx-4 d-flex justify-content-center align-content-center">
+                <button class="carousel-control-prev my-auto" type="button" data-bs-target="#exampleCarousel"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-caret-left fa-3x"></i>
+                </button>
+                <div class="carousel-inner hr-20">
                     <div class="px-2 carousel-item active d-flex align-items-center">
                         <img src="assets/images/servicio1.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
                     </div>
                     <div class="px-2 carousel-item d-flex align-items-center">
                         <img src="assets/images/servicio2.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
                     </div>
                     <div class="px-2 carousel-item d-flex align-items-center">
                         <img src="assets/images/servicio3.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
                     </div>
                     <div class="px-2 carousel-item d-flex align-items-center">
                         <img src="assets/images/servicio1.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
                     </div>
                     <div class="px-2 carousel-item d-flex align-items-center">
                         <img src="assets/images/servicio2.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
                     </div>
                     <div class="px-2 carousel-item d-flex align-items-center">
                         <img src="assets/images/servicio2.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
                     </div>
                     <div class="px-2 carousel-item d-flex align-items-center">
                         <img src="assets/images/servicio3.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
                     </div>
                 </div>
-                <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#exampleCarousel"
-                    data-bs-slide="prev">
-                    <i class="fa-solid fa-caret-left fa-2x text-white"></i>
-                </button>
-                <button class="carousel-control-next bg-dark" type="button" data-bs-target="#exampleCarousel"
+                <button class="carousel-control-next my-auto" type="button" data-bs-target="#exampleCarousel"
                     data-bs-slide="next">
-                    <i class="fa-solid fa-caret-right fa-2x text-white"></i>
+                    <i class="fa-solid fa-caret-right fa-3x"></i>
                 </button>
             </div>
         </section>
@@ -206,27 +199,23 @@
         <!--Contrataciones-->
         <article id="colaboradoresContainer" class="container pb-4">
             <div class="row justify-content-center">
-                <div class="col-6 col-md-4 col-lg-3 my-2">
-                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-2 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-2 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-2 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-2 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-6 col-md-4 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-2 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
@@ -242,9 +231,9 @@
                 <div class="row px-4 py-2">
                     <div id="redesSociales" class="d-flex justify-content-center align-items-center">
                         <!-- Iconos de redes sociales -->
-                        <a href="#" class="text-white mx-2 pb-2"><i class="fab fa-twitter fa-2x"></i></a>
-                        <a href="#" class="text-white mx-2 pb-2"><i class="fab fa-facebook fa-2x"></i></a>
-                        <a href="#" class="text-white mx-2 pb-2"><i class="fab fa-instagram fa-2x"></i></a>
+                        <a href="#" class="text-white mx-3 pb-3"><i class="fab fa-twitter fa-2x"></i></a>
+                        <a href="#" class="text-white mx-3 pb-3"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="#" class="text-white mx-3 pb-3"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </div>
                 <div class="row pt-2 pb-4">
@@ -258,20 +247,21 @@
                         <div class="mx-4 text-center">
                             <i class="fas fa-phone"></i>
                             <a id="telefono" href="tel:+123456789"
-                                class="text-white text-decoration-none pb-2">+123456789</a>
+                                class="text-white text-decoration-none pb-2">+34 600 000 000</a>
                         </div>
                     </div>
                 </div>
+                <div class="pb-4"></div>
             </div>
         </div>
         <div class="row bg-dark d-flex display-inline-items">
             <!-- Sección 2 - Enlaces -->
             <div class="col pt-4 pb-2">
                 <ul id="enlacesFooter" class="list-unstyled d-flex align-items-center justify-content-center">
-                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Aviso Legal</a></li>
-                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Mapa Web</a></li>
-                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Política de Privacidad</a></li>
-                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Política de Cookies</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-3 pb-2">Aviso Legal</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-3 pb-2">Mapa Web</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-3 pb-2">Política de Privacidad</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-3 pb-2">Política de Cookies</a></li>
                 </ul>
             </div>
         </div>
