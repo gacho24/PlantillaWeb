@@ -13,7 +13,8 @@
 }
 
 .navbar-nav .nav-item a,
-ul li a,
+#enlacesFooter a,
+#redesSociales a,
 #telefono,
 #mail {
     position: relative;
@@ -21,7 +22,8 @@ ul li a,
 }
 
 .navbar-nav .nav-item a::before,
-ul li a::before,
+#enlacesFooter a::before,
+#redesSociales a::before,
 #telefono::before,
 #mail::before {
     content: '';
@@ -35,7 +37,8 @@ ul li a::before,
 }
 
 .navbar-nav .nav-item a:hover::before,
-ul li a:hover::before,
+#enlacesFooter a:hover::before,
+#redesSociales a:hover::before,
 #telefono:hover::before,
 #mail:hover::before {
     width: 100%;
