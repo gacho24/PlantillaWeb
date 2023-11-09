@@ -30,4 +30,16 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         $(multipleImgCarousel).addClass("slide");
     }
+
+    var achicado;
+
+    $("#servicios .card").on("mouseover", function () {
+        if (achicado) {
+            $(achicado).find("img").removeClass("h-50");
+            $(achicado).find("img").addClass("h-100");
+        }
+        achicado = this;
+        $(this).find("img").removeClass("h-100");
+        $(this).find("img").addClass("h-50");
+    });
 });

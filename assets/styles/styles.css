@@ -55,6 +55,17 @@ a:hover,
 }
 
 /*Servicios*/
+#servicios .card img {
+    transition: height 0.3s linear;
+}
+
+#servicios .card-body {
+    z-index: 4!important;
+}
+
+.top-65 {
+    top: 65% !important;
+}
 
 /*Galería de imágenes*/
 
