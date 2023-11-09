@@ -48,6 +48,8 @@
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' class='bi bi-chevron-down' viewBox='0 0 16 16'%3e%3cpath d='M1 5l7 7 7-7H1z'/%3e%3c/svg%3e");
 }
 
+/*Servicios*/
+
 /*Colaboradores*/
 #colaboradoresContainer img {
     max-width: 100%;
@@ -56,4 +58,6 @@
 /*Footer*/
 #contacto {
     background-image: url("../images/fondo.jpg");
+    background-size: cover;
+    background-position: center;
 }
