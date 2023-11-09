@@ -28,7 +28,8 @@
             <div class="container-fluid">
                 <!-- Logo a la izquierda -->
                 <a class="navbar-brand text-white position-absolute" href="#">
-                    <img id="logo" src="assets/images/logo.png" alt="Logo" class="d-inline-block align-top">
+                    <img id="logo" class="border rounded img-fluid" src="assets/images/logo.png" alt="Logo"
+                        class="d-inline-block align-top">
                 </a>
                 <!-- Contenido a la derecha -->
                 <div class="navbar-collapse justify-content-md-end justify-content-center w-100">
@@ -89,18 +90,18 @@
             <video class="w-100" src="assets/videos/video.mp4" controls allowfullscreen></video>
         </article>
         <!--Descripcion-->
-        <article id="infoContainer" class="d-flex flex-column align-content-center w-50 mx-auto" style="height: 30vh;">
+        <article id="infoContainer" class="d-flex flex-column align-content-center w-50 mx-auto pt-4 pb-2" style="min-height: 30vh;">
             <div class="mt-auto"></div>
-            <h2 class="text-uppercase text-center">Forma musik</h2>
+            <h2 class="text-uppercase text-center mb-3">Forma musik</h2>
             <p>Somos una empresa de servicios educativos y culturales. Nuestra pasión radica en la producción de eventos
                 y espectáculos, la formación y el asesoramiento en el sector de la agricultura y la ganadería.</p>
             <p>Busques lo que busques, estamos aquí para ayudarle a alcanzar tus metas.</p>
             <div class="mb-auto"></div>
         </article>
         <!--Servicios-->
-        <section id="servicios" class="bg-dark py-4">
+        <section id="servicios" class="bg-dark pt-2 pb-4">
             <h2 class="text-center py-4 text-white text-uppercase">Nuestros Servicios</h2>
-            <div class="row pb-4">
+            <div class="row pb-2">
                 <!-- Card 1 -->
                 <div class="col-md-4">
                     <div class="card bg-dark h-100 position-relative">
@@ -135,82 +136,83 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Imagenes-->
-        <div id="imagenesCarousel" class="carousel mx-4">
-            <div class="carousel-inner my-4">
-                <div class="px-2 carousel-item active">
-                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
-                </div>
-                <div class="px-2 carousel-item"><img
-                        src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded ">
+            <div class="row pb-3">
+                <div class="col text-center">
+                    <button id="btnVerMas" type="button" class="btn btn-dark mt-3 border-light">
+                        <h5 class="m-2"><i class="fas fa-eye me-2"></i>Ver más</h5>
+                    </button>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
+        </section>
+        <!--Imagenes-->
+        <section id="imagenes" class="py-4">
+            <h2 class="text-center py-4 text-uppercase">Galería de imágenes</h2>
+            <div id="imagenesCarousel" class="carousel mx-4">
+                <div class="carousel-inner">
+                    <div class="px-2 carousel-item active d-flex align-items-center">
+                        <img src="assets/images/servicio1.jpg" alt="YouTube"
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                    </div>
+                    <div class="px-2 carousel-item d-flex align-items-center">
+                        <img src="assets/images/servicio2.jpg" alt="YouTube"
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                    </div>
+                    <div class="px-2 carousel-item d-flex align-items-center">
+                        <img src="assets/images/servicio3.jpg" alt="YouTube"
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                    </div>
+                    <div class="px-2 carousel-item d-flex align-items-center">
+                        <img src="assets/images/servicio1.jpg" alt="YouTube"
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                    </div>
+                    <div class="px-2 carousel-item d-flex align-items-center">
+                        <img src="assets/images/servicio2.jpg" alt="YouTube"
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                    </div>
+                    <div class="px-2 carousel-item d-flex align-items-center">
+                        <img src="assets/images/servicio2.jpg" alt="YouTube"
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                    </div>
+                    <div class="px-2 carousel-item d-flex align-items-center">
+                        <img src="assets/images/servicio3.jpg" alt="YouTube"
+                            class="img-fluid h-100 object-fit-cover border border-dark rounded ">
+                    </div>
+                </div>
+                <button class="carousel-control-prev bg-dark" type="button" data-bs-target="#exampleCarousel"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-caret-left fa-2x text-white"></i>
+                </button>
+                <button class="carousel-control-next bg-dark" type="button" data-bs-target="#exampleCarousel"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-caret-right fa-2x text-white"></i>
+                </button>
+            </div>
+        </section>
+
         <!--Contrataciones-->
-        <article id="colaboradoresContainer" class="container">
+        <article id="colaboradoresContainer" class="container pb-4">
             <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-3 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded ">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-3 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-3 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-3 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-3 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
-                <div class="col-sm-12 col-md-6 col-lg-3 my-2">
+                <div class="col-6 col-md-4 col-lg-3 my-2">
                     <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
                         class="img-fluid h-auto border border-dark rounded">
                 </div>
@@ -231,7 +233,7 @@
                         <a href="#" class="text-white mx-2 pb-2"><i class="fab fa-instagram fa-2x"></i></a>
                     </div>
                 </div>
-                <div class="row p-4">
+                <div class="row pt-2 pb-4">
                     <!-- Correo y teléfono como enlaces -->
                     <div class="d-flex justify-content-center align-items-center mb-1">
                         <div class="mx-4 text-center">
@@ -252,11 +254,10 @@
             <!-- Sección 2 - Enlaces -->
             <div class="col pt-4 pb-2">
                 <ul id="enlacesFooter" class="list-unstyled d-flex align-items-center justify-content-center">
-                    <li><a href="#" class="text-decoration-none text-white me-4 pb-2">Aviso Legal</a></li>
-                    <li><a href="#" class="text-decoration-none text-white me-4 pb-2">Mapa Web</a></li>
-                    <li><a href="#" class="text-decoration-none text-white me-4 pb-2">Política de Privacidad</a>
-                    </li>
-                    <li><a href="#" class="text-decoration-none text-white me-4 pb-2">Política de Cookies</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Aviso Legal</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Mapa Web</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Política de Privacidad</a></li>
+                    <li><a href="#" class="text-decoration-none text-white mx-2 pb-2">Política de Cookies</a></li>
                 </ul>
             </div>
         </div>

@@ -1,3 +1,9 @@
+/*Estilos generales*/
+a:hover,
+#btnVerMas:hover{
+    animation: heartbeat 1.5s ease-in-out infinite both;
+}
+
 /*Navbar*/
 #logo {
     width: 8rem !important;
@@ -50,6 +56,8 @@
 
 /*Servicios*/
 
+/*Galería de imágenes*/
+
 /*Colaboradores*/
 #colaboradoresContainer img {
     max-width: 100%;
@@ -60,6 +68,35 @@
     background-image: url("../images/fondo.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/*Animaciones*/
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+        transform-origin: center center;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        transform: scale(0.91);
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        transform: scale(0.98);
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        transform: scale(0.87);
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        transform: scale(1);
+        animation-timing-function: ease-out;
+    }
 }
 
 .carousel-control-prev,
