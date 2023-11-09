@@ -1,14 +1,21 @@
-#logo{
+/*Navbar*/
+#logo {
     width: 8rem !important;
     height: 5rem !important;
 }
 
-.navbar-nav .nav-item a {
+.navbar-nav .nav-item a,
+ul li a,
+#telefono,
+#mail {
     position: relative;
     text-decoration: none;
 }
 
-.navbar-nav .nav-item a::before {
+.navbar-nav .nav-item a::before,
+ul li a::before,
+#telefono::before,
+#mail::before {
     content: '';
     position: absolute;
     left: 0;
@@ -19,7 +26,10 @@
     transition: width 0.3s linear;
 }
 
-.navbar-nav .nav-item a:hover::before {
+.navbar-nav .nav-item a:hover::before,
+ul li a:hover::before,
+#telefono:hover::before,
+#mail:hover::before {
     width: 100%;
 }
 
@@ -27,6 +37,12 @@
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='white' class='bi bi-chevron-down' viewBox='0 0 16 16'%3e%3cpath d='M1 5l7 7 7-7H1z'/%3e%3c/svg%3e");
 }
 
-#colaboradoresContainer img{
+/*Colaboradores*/
+#colaboradoresContainer img {
     max-width: 100%;
+}
+
+/*Footer*/
+#contacto {
+    background-image: url("../images/fondo.jpg");
 }
