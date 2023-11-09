@@ -53,7 +53,8 @@
                                 </a>
                             </li>
                             <li class="nav-item mx-2 my-auto">
-                                <select class="form-select pe-4 bg-dark text-white border-0" aria-label="Select de idiomas">
+                                <select class="form-select pe-4 bg-dark text-white border-0"
+                                    aria-label="Select de idiomas">
                                     <option value="es">ES</option>
                                     <option value="en">EN</option>
                                 </select>
@@ -85,12 +86,16 @@
     <!--Main-->
     <main>
         <!--Video-->
-        <article id="videoContainer"
-            class="embed-responsive embed-responsive-16by9 d-flex justify-content-center bg-dark">
-            <video id="videoEmpresa" class="w-100" src="assets/videos/video.mp4" controls allowfullscreen></video>
+        <article id="videoContainer" class="position-relative embed-responsive embed-responsive-16by9 d-flex justify-content-center bg-dark">
+            <video id="videoEmpresa" class="w-100" src="assets/videos/video.mp4" allowfullscreen></video>
+            <button id="playPauseBtn" class="position-absolute top-50 start-50 translate-middle btn btn-dark rounded-circle p-4">
+                <i id="playPauseIcon" class="fas fa-play fa-3x"></i>
+            </button>
         </article>
+        
         <!--Descripcion-->
-        <article id="infoContainer" class="d-flex flex-column align-content-center w-50 mx-auto pt-4 pb-2" style="min-height: 30vh;">
+        <article id="infoContainer" class="d-flex flex-column align-content-center w-50 mx-auto pt-4 pb-2"
+            style="min-height: 30vh;">
             <div class="mt-auto"></div>
             <h2 class="text-uppercase text-center mb-3">Forma musik</h2>
             <p>Somos una empresa de servicios educativos y culturales. Nuestra pasión radica en la producción de eventos
@@ -246,8 +251,8 @@
                         </div>
                         <div class="mx-4 text-center">
                             <i class="fas fa-phone"></i>
-                            <a id="telefono" href="tel:+123456789"
-                                class="text-white text-decoration-none pb-2">+34 600 000 000</a>
+                            <a id="telefono" href="tel:+123456789" class="text-white text-decoration-none pb-2">+34 600
+                                000 000</a>
                         </div>
                     </div>
                 </div>
