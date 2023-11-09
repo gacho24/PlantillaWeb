@@ -15,6 +15,13 @@
     <!--JQuery-->
     <script src="https://code.jquery.com/jquery-3.7.1.js"
         integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!--Enlaces lightBox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"
+        integrity="sha512-Ixzuzfxv1EqafeQlTCufWfaC6ful6WFqIz4G+dWvK0beHw0NVJwvCKSgafpy5gwNqKmgUfIBraVwkKI+Cz0SEQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css"
+        integrity="sha512-Woz+DqWYJ51bpVk5Fv0yES/edIMXjj3Ynda+KWTIkGoynAMHrqTcDUQltbipuiaD5ymEo9520lyoVOo9jCQOCA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Enlaces a scripts y estilos propios-->
     <link rel="stylesheet" href="assets/styles/styles.css">
     <script src="scripts/script.js"></script>
@@ -86,21 +93,26 @@
     <!--Main-->
     <main>
         <!--Video-->
-        <article id="videoContainer" class="position-relative embed-responsive embed-responsive-16by9 d-flex justify-content-center bg-dark">
+        <article id="videoContainer"
+            class="position-relative embed-responsive embed-responsive-16by9 d-flex justify-content-center bg-dark">
             <video id="videoEmpresa" class="w-100" src="assets/videos/video.mp4" allowfullscreen></video>
-            <button id="playPauseBtn" class="position-absolute top-50 start-50 translate-middle btn btn-dark rounded-circle p-4">
+            <button id="playPauseBtn"
+                class="position-absolute top-50 start-50 translate-middle btn btn-dark rounded-circle p-4">
                 <i id="playPauseIcon" class="fas fa-play fa-3x"></i>
             </button>
         </article>
-        
+
         <!--Descripcion-->
         <article id="infoContainer" class="d-flex flex-column align-content-center w-50 mx-auto pt-4 pb-2"
             style="min-height: 30vh;">
             <div class="mt-auto"></div>
-            <h2 class="text-uppercase text-center mb-3">Forma musik</h2>
-            <p>Somos una empresa de servicios educativos y culturales. Nuestra pasión radica en la producción de eventos
-                y espectáculos, la formación y el asesoramiento en el sector de la agricultura y la ganadería.</p>
-            <p>Busques lo que busques, estamos aquí para ayudarle a alcanzar tus metas.</p>
+            <h1 class="text-uppercase text-center mb-3">Forma musik</h1>
+            <div id="textoDesc">
+                <p>Somos una empresa de servicios educativos y culturales. Nuestra pasión radica en la producción de
+                    eventos y espectáculos, la formación y el asesoramiento en el sector de la agricultura y la
+                    ganadería.</p>
+                <p>Busques lo que busques, estamos aquí para ayudarle a alcanzar tus metas.</p>
+            </div>
             <div class="mb-auto"></div>
         </article>
         <!--Servicios-->
@@ -110,36 +122,47 @@
                 <!-- Card 1 -->
                 <div class="col-md-4 px-0 hw-38">
                     <div class="card bg-black h-100 position-relative">
-                        <img src="assets/images/servicio1.jpg" class="card-img-top h-100 w-100 object-fit-cover position-relative z-2" alt="Espectáculos y Eventos">
-                        <div class="card-body text-center border border-white rounded d-flex flex-column position-absolute start-50 translate-middle top-50 w-100">
+                        <img src="assets/images/servicio1.jpg"
+                            class="card-img-top h-100 w-100 object-fit-cover position-relative z-2"
+                            alt="Espectáculos y Eventos">
+                        <div
+                            class="card-body text-center border border-white rounded d-flex flex-column position-absolute start-50 translate-middle top-50 w-100">
                             <p class="card-text text-uppercase text-light fs-5">Espectáculos y Eventos</p>
                         </div>
                         <div class="position-absolute mx-4 ps-2 mt-3 top-65">
-                            <p class="text-uppercase text-light">Texto generico para este servicio que para nada es relleno</p>
+                            <p class="text-uppercase text-light">Texto generico para este servicio que para nada es
+                                relleno</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 2 -->
                 <div class="col-md-4 px-0 hw-38">
                     <div class="card bg-black h-100">
-                        <img src="assets/images/servicio2.jpg" class="card-img-top h-100 w-100 object-fit-cover position-relative z-2" alt="Formación">
-                        <div class="card-body text-center border border-white rounded d-flex flex-column position-absolute start-50 translate-middle top-50 w-100">
+                        <img src="assets/images/servicio2.jpg"
+                            class="card-img-top h-100 w-100 object-fit-cover position-relative z-2" alt="Formación">
+                        <div
+                            class="card-body text-center border border-white rounded d-flex flex-column position-absolute start-50 translate-middle top-50 w-100">
                             <p class="card-text text-uppercase text-light fs-5">Formación</p>
                         </div>
                         <div class="position-absolute mx-4 ps-2 mt-3 top-65">
-                            <p class="text-uppercase text-light">Texto generico para este servicio que para nada es relleno</p>
+                            <p class="text-uppercase text-light">Texto generico para este servicio que para nada es
+                                relleno</p>
                         </div>
                     </div>
                 </div>
                 <!-- Card 3 -->
                 <div class="col-md-4 px-0 hw-38">
                     <div class="card bg-black h-100">
-                        <img src="assets/images/servicio3.jpg" class="card-img-top h-100 w-100 object-fit-cover position-relative z-2" alt="Asesoramiento Agrícola y Ganadero">
-                        <div class="card-body text-center border border-white rounded d-flex flex-column position-absolute start-50 translate-middle top-50">
+                        <img src="assets/images/servicio3.jpg"
+                            class="card-img-top h-100 w-100 object-fit-cover position-relative z-2"
+                            alt="Asesoramiento Agrícola y Ganadero">
+                        <div
+                            class="card-body text-center border border-white rounded d-flex flex-column position-absolute start-50 translate-middle top-50">
                             <p class="card-text text-uppercase text-light fs-5">Asesoramiento Agrícola y Ganadero</p>
                         </div>
                         <div class="position-absolute mx-4 ps-2 mt-3 top-65">
-                            <p class="text-uppercase text-light">Texto generico para este servicio que para nada es relleno</p>
+                            <p class="text-uppercase text-light">Texto generico para este servicio que para nada es
+                                relleno</p>
                         </div>
                     </div>
                 </div>
@@ -155,33 +178,40 @@
                 </button>
                 <div class="carousel-inner hr-20">
                     <div class="px-2 carousel-item active">
-                        <img src="assets/images/servicio1.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
+                        <a href="assets/images/servicio1.jpg" data-lightbox="imgCar"><img
+                                src="assets/images/servicio1.jpg" alt="Imagen"
+                                class="img-fluid h-100 object-fit-cover border border-dark rounded w-100"></a>
                     </div>
                     <div class="px-2 carousel-item">
-                        <img src="assets/images/servicio2.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
-                    </div>
+                        <a href="assets/images/servicio2.jpg" data-lightbox="imgCar"><img
+                                src="assets/images/servicio2.jpg" alt="Imagen"
+                                class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
+                        </a> </div>
                     <div class="px-2 carousel-item">
-                        <img src="assets/images/servicio3.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
-                    </div>
+                        <a href="assets/images/servicio3.jpg" data-lightbox="imgCar"><img
+                                src="assets/images/servicio3.jpg" alt="Imagen"
+                                class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
+                        </a> </div>
                     <div class="px-2 carousel-item">
-                        <img src="assets/images/servicio1.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
-                    </div>
+                        <a href="assets/images/servicio1.jpg" data-lightbox="imgCar"><img
+                                src="assets/images/servicio1.jpg" alt="Imagen"
+                                class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
+                        </a> </div>
                     <div class="px-2 carousel-item">
-                        <img src="assets/images/servicio2.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
-                    </div>
+                        <a href="assets/images/servicio2.jpg" data-lightbox="imgCar"><img
+                                src="assets/images/servicio2.jpg" alt="Imagen"
+                                class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
+                        </a> </div>
                     <div class="px-2 carousel-item">
-                        <img src="assets/images/servicio2.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
-                    </div>
+                        <a href="assets/images/servicio3.jpg" data-lightbox="imgCar"><img
+                                src="assets/images/servicio2.jpg" alt="Imagen"
+                                class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
+                        </a> </div>
                     <div class="px-2 carousel-item">
-                        <img src="assets/images/servicio3.jpg" alt="YouTube"
-                            class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
-                    </div>
+                        <a href="assets/images/servicio1.jpg" data-lightbox="imgCar"><img
+                                src="assets/images/servicio3.jpg" alt="Imagen"
+                                class="img-fluid h-100 object-fit-cover border border-dark rounded w-100">
+                        </a> </div>
                 </div>
                 <button class="carousel-control-next my-auto" type="button" data-bs-target="#imagenesCarousel"
                     data-bs-slide="next">
@@ -194,24 +224,24 @@
         <article id="colaboradoresContainer" class="container pb-4">
             <div class="row justify-content-center mx-sm-0 mx-4">
                 <div class="col-6 col-md-4 col-lg-2 my-2">
-                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded">
+                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg"
+                        data-lightbox="imgCar" alt="YouTube" class="img-fluid h-auto border border-dark rounded">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 my-2">
-                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded">
+                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg"
+                        data-lightbox="imgCar" alt="YouTube" class="img-fluid h-auto border border-dark rounded">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 my-2">
-                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded">
+                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg"
+                        data-lightbox="imgCar" alt="YouTube" class="img-fluid h-auto border border-dark rounded">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 my-2">
-                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded">
+                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg"
+                        data-lightbox="imgCar" alt="YouTube" class="img-fluid h-auto border border-dark rounded">
                 </div>
                 <div class="col-6 col-md-4 col-lg-2 my-2">
-                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg" alt="YouTube"
-                        class="img-fluid h-auto border border-dark rounded">
+                    <img src="https://brandemia.org/contenido/subidas/2017/10/logo_youtube-1-960x640.jpg"
+                        data-lightbox="imgCar" alt="YouTube" class="img-fluid h-auto border border-dark rounded">
                 </div>
             </div>
         </article>

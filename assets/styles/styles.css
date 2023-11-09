@@ -1,5 +1,9 @@
 /*Estilos generales*/
-a:hover,
+.navbar-nav .nav-item a:hover,
+#enlacesFooter a:hover,
+#redesSociales a:hover,
+#telefono:hover,
+#mail:hover
 #btnVerMas:hover {
     animation: heartbeat 1.5s ease-in-out infinite both;
 }
@@ -155,6 +159,10 @@ body {
     .card-text {
         font-size: 1.1rem !important;
     }
+
+    #textoDesc p{
+        font-size: 1rem;
+    }
 }
 
 /* Media query para pantallas medianas */
@@ -166,6 +174,10 @@ body {
     .card-text {
         font-size: 1.3rem !important;
     }
+
+    #textoDesc p{
+        font-size: 1.2rem;
+    }
 }
 
 /* Media query para pantallas grandes */
@@ -176,6 +188,10 @@ body {
 
     .card-text {
         font-size:1.7rem !important;
+    }
+
+    #textoDesc p{
+        font-size: 1.4rem;
     }
 }
 
